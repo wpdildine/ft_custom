@@ -23,10 +23,12 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-stylesheets[all][] = bootstrap/css/jasny-bootstrap.min.css
+
 stylesheets[all][] = css/style.css
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
-
+stylesheets[all][] = bootstrap/css/jasny-bootstrap.min.css
+stylesheets[all][] = bootstrap/css/ripples.min.css
+stylesheets[all][] = bootstrap/css/material-wfont.min.css
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -54,6 +56,10 @@ stylesheets[all][] = bootstrap/css/bootstrap.min.css
  scripts[] = 'bootstrap/js/tab.js'
  scripts[] = 'bootstrap/js/transition.js'
  scripts[] = 'bootstrap/js/jasny-bootstrap.js'
+ scripts[] = 'bootstrap/js/ripples.min.js'
+ scripts[] = 'bootstrap/js/material.min.js'
+ 
+ 
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 ; settings[bootstrap_cdn] = ''

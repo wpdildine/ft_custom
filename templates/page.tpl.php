@@ -87,19 +87,17 @@
       <?php endif; ?>
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-	  <div class="navbar navbar-default navbar-fixed-top">
-		  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-collapse" data-canvas="body">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-	  </div>
+      <button type="button" class="navbar navbar-default navbar-fixed-top" data-toggle="offcanvas" data-target="#leftMenu" data-canvas="body">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
-        <nav role="navigation">
+      
+        <nav id = "leftMenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
@@ -110,7 +108,7 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
-      </div>
+      
     <?php endif; ?>
   </div>
 </header>
