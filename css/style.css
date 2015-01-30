@@ -1,4 +1,25 @@
 /**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
+ * Style Overrides
+ * 
  */
+.navmenu-default {
+	background-color:#009587;	
+}
+
+#home-bg{
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	max-height:950px;
+}
+#home-bg.bg-1{
+		background-image: url('../assets/bg-01.jpg'),
+		url('../assets/bg-02.jpg');
+		background-position: left top, left-bottom;
+}
+

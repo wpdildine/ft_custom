@@ -24,11 +24,12 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/style.css
+
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
 stylesheets[all][] = bootstrap/css/jasny-bootstrap.min.css
 stylesheets[all][] = bootstrap/css/ripples.min.css
 stylesheets[all][] = bootstrap/css/material-wfont.min.css
+stylesheets[all][] = css/style.css
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -58,6 +59,7 @@ stylesheets[all][] = bootstrap/css/material-wfont.min.css
  scripts[] = 'bootstrap/js/jasny-bootstrap.js'
  scripts[] = 'bootstrap/js/ripples.min.js'
  scripts[] = 'bootstrap/js/material.min.js'
+ scripts[] = 'bootstrap/js/main.js'
  
  
 ;
