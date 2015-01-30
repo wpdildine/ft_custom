@@ -113,6 +113,7 @@
     <?php endif; ?>
   </div>
 </header>
+<div id = "front-page-container">
 <div id ="home-bg" class ="bg-1">
 	<div class="main-container container">
 	  <header role="banner" id="page-header">
@@ -162,6 +163,7 @@
 		<?php endif; ?>
 		</div>
 	</div>
+</div>
 </div>	
 <footer class="footer container">
   <?php print render($page['footer']); ?>

@@ -5,21 +5,21 @@
 .navmenu-default {
 	background-color:#009587;	
 }
-
+#front-page-container{
+	height:4000px;
+	}
 #home-bg{
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-moz-background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	-o-background-size: auto 100%;
+	background-size: 100% auto;
 	min-height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	max-height:950px;
 }
 #home-bg.bg-1{
 		background-image: url('../assets/bg-01.jpg'),
 		url('../assets/bg-02.jpg');
-		background-position: left top, left-bottom;
+		background-position: center 0px, center 1600px;
 }
 
