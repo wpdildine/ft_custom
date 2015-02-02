@@ -15,11 +15,24 @@
 	background-size: 100% auto;
 	min-height: 100%;
 	background-repeat: no-repeat;
-	max-height:950px;
 }
 #home-bg.bg-1{
 		background-image: url('../assets/bg-01.jpg'),
 		url('../assets/bg-02.jpg');
-		background-position: center 0px, center 1600px;
+		background-position-x:  50%, 50%;
+		background-position-y:  0px, 1600px;
 }
 
+button.navbar.navbar-default.navbar{
+	width:50px;
+	background-color: #fff;
+	}
+	
+a.logo>img{
+	max-height:60px;
+}
+
+.navbar-header{
+		width:100%;
+		
+}		
