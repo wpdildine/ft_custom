@@ -62,19 +62,22 @@ a.logo>img{
 	padding-top:45px;		
 }
 
-.hp-content{
-	
+#hp-content{
+
 }
 
 .ct-pos-1{
+	margin-top:3%;
 	position:absolute;
 	top:200px;
 }
 .ct-pos-2{
-position:absolute;
-	top:1400px;
+	margin-top:3%;
+	position:absolute;
+	top:200px;
 }
 .ct-pos-3{
-position:absolute;
-	top:0;
+	margin-top:3%;
+	position:absolute;
+	top:200px;
 }			
