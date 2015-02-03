@@ -3,13 +3,25 @@
  * 
  */
 @import url(http://fonts.googleapis.com/css?family=Prata);
+@import url(http://fonts.googleapis.com/css?family=Bowlby+One+SC);
  
 body{
 	font-size: 1.7em;
 	font-family: 'Prata', serif;
 }
-p , h1, h2, h3, h4, h5, h6{
+p , .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6{
 	font-family: 'Prata', serif;
+	line-height:1.4
+}
+
+.h1, h1{
+	font-family: 'Bowlby One SC', cursive;
+	line-height:1.4;
+	font-size: 2.5em;
+}
+
+.h2, h2{
+	font-size: 1.5em;
 }
 .navmenu-default {
 	background-color:#009587;	
@@ -65,7 +77,9 @@ a.logo>img{
 #hp-content{
 
 }
-
+.hp-page{
+	max-width:100%;
+}
 .ct-pos-1{
 	margin-top:3%;
 	position:absolute;
@@ -80,4 +94,68 @@ a.logo>img{
 	margin-top:3%;
 	position:absolute;
 	top:200px;
-}			
+}
+
+.ic-cont{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
+	margin-top:16%;
+	text-align:center;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+.ic-cont>img{
+	margin-left:auto;
+	margin-right:auto;
+	transition: .28s cubic-bezier(.4,0,.2,1);
+	margin-bottom: 6%;
+}
+
+.ic-cont>h2{
+	text-align:center;
+}
+.ic-cont>img:hover{
+	filter: drop-shadow(0 6px 10px rgba(0,0,0,.23));
+	-webkit-filter: drop-shadow(0 6px 10px rgba(0,0,0,.23));
+	
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.ic-cont{
+	padding:0;
+}
+.btn{
+	font-size:12px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.ic-cont{
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 54%;
+	margin-top: 11%;
+}
+.hp-page{
+	max-width:94%;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	
+}	
