@@ -75,12 +75,14 @@ a.logo >img{
 .navbar.navbar, .navbar-default.navbar{
 	transition:background-color 1s linear;
 	background-color:  rgba(0,149,135,1);
+	box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
 }
 #navbar>.container{
-		margin-top:50px;
+	margin-top:50px;
 }		
-	
-	
+.icon-bar{
+	border: 1px solid #009587 !important;	
+}	
 .navbar-nav>li>a{
 	padding-top:15px !important;
 	padding-bottom:15px !important;
@@ -118,7 +120,7 @@ a.logo >img{
 .hp-link{
 	display:inline-block;
 	width: auto;
-	margin: 0px 25%;
+	margin: 0px 15%;
 }
 .hp-link>.btn{
 	margin:12px;
@@ -153,8 +155,8 @@ a.logo >img{
 	height: auto;
 	position: absolute;
 	top: 80%;
-	right: 43%;
-	left: 43%;
+	right: 30%;
+	left: 30%;
 	z-index: 5;
 }
 
@@ -165,12 +167,20 @@ a.logo >img{
 }
 
 .mouse-ico>img{
-	width: 25%;
+	max-width: 7%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top:0px;
+	margin-top: 0px;
 	display: inherit;
-}	
+	min-width: 25px;
+	width: auto;
+}
+
+body > #front-page-container > .mouse-scroll-cont > .mouse-ico > h5{
+	font-size: .9em;
+	font-weight:600;
+	color:#009587;	
+}		
 /*	
 	-webkit-animation-name: indicator;
 	-webkit-animation-duration: 1s;
@@ -251,6 +261,10 @@ margin: 22px 0%;
 
 a.logo >img{
 	display:none;
+}
+
+.hp-link{
+	margin: 0px 25%;
 }
 }
 
