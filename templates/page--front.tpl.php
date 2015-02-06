@@ -74,98 +74,105 @@
  */
 ?>
 <div id = "front-page-container">
-<div id ="home-bg" class ="bg-1">
-
-<header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-		  <?php if ($logo): ?>
-		  <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-			<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-		  </a>
-		  <?php endif; ?>
-
-		  <?php if (!empty($site_name)): ?>
-		  <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-		  <?php endif; ?>
-
-		  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-		  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#leftMenu" data-canvas="body">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		</div>
-
-		<?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-		  
-			<nav id = "leftMenu" class="navbar-offcanvas offcanvas navbar-right" role="navigation">
-				<ul class="nav navbar-nav">
-				  <?php if (!empty($primary_nav)): ?>
-					<li><?php print render($primary_nav); ?></li>
+	<div id ="home-bg" class ="bg-1">
+		<header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				  <?php if ($logo): ?>
+				  <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+					<img src="sites/all/themes/ft_custom/assets/logo.svg" alt="<?php print t('Home'); ?>" />
+				  </a>
 				  <?php endif; ?>
-				  <?php if (!empty($secondary_nav)): ?>
-					<li class="dropdown-toggle" ><?php print render($secondary_nav); ?></li>
+
+				  <?php if (!empty($site_name)): ?>
+				  <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
 				  <?php endif; ?>
-				  <?php if (!empty($page['navigation'])): ?>
-					<li><?php print render($page['navigation']); ?></li>
+
+				  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#leftMenu" data-canvas="body">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+
+				<?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+				  
+					<nav id = "leftMenu" class="navbar-offcanvas navbar-right offcanvas" role="navigation">
+						<ul class="nav navbar-nav">
+						  <?php if (!empty($primary_nav)): ?>
+							<li><?php print render($primary_nav); ?></li>
+						  <?php endif; ?>
+						  <?php if (!empty($secondary_nav)): ?>
+							<li class="dropdown-toggle" ><?php print render($secondary_nav); ?></li>
+						  <?php endif; ?>
+						  <?php if (!empty($page['navigation'])): ?>
+							<li><?php print render($page['navigation']); ?></li>
+						  <?php endif; ?>
+						</ul>
+					</nav>
+				  
+				<?php endif; ?>
+			 </div> 
+		</header>
+			<div class="main-container container">
+			  <header role="banner" id="page-header" >
+				<?php if (!empty($site_slogan)): ?>
+				  <p class="lead"><?php print $site_slogan; ?></p>
+				<?php endif; ?>
+
+				<?php print render($page['header']); ?>
+			  </header> <!-- /#page-header -->
+
+			  <div class="row">
+
+				<?php if (!empty($page['sidebar_first'])): ?>
+				  <aside class="col-sm-3" role="complementary">
+					<?php print render($page['sidebar_first']); ?>
+				  </aside>  <!-- /#sidebar-first -->
+				<?php endif; ?>
+
+				<section<?php print $content_column_class; ?>>
+				  <?php if (!empty($page['highlighted'])): ?>
+					<div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
 				  <?php endif; ?>
-				</ul>
-			</nav>
-		  
-		<?php endif; ?>
-	 </div> 
-</header>
-	<div class="main-container container">
-	  <header role="banner" id="page-header" >
-		<?php if (!empty($site_slogan)): ?>
-		  <p class="lead"><?php print $site_slogan; ?></p>
-		<?php endif; ?>
+				  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+				  <a id="main-content"></a>
+				  <?php print render($title_prefix); ?>
+				  <?php if (!empty($title)): ?>
+					<h1 class="page-header" style="display:none;"><?php print $title; ?></h1>
+				  <?php endif; ?>
+				  <?php print render($title_suffix); ?>
+				  <?php print $messages; ?>
+				  <?php if (!empty($tabs)): ?>
+					<?php print render($tabs); ?>
+				  <?php endif; ?>
+				  <?php if (!empty($page['help'])): ?>
+					<?php print render($page['help']); ?>
+				  <?php endif; ?>
+				  <?php if (!empty($action_links)): ?>
+					<ul class="action-links"><?php print render($action_links); ?></ul>
+				  <?php endif; ?>
+				  <?php print render($page['content']); ?>
+				</section>
 
-		<?php print render($page['header']); ?>
-	  </header> <!-- /#page-header -->
-
-	  <div class="row">
-
-		<?php if (!empty($page['sidebar_first'])): ?>
-		  <aside class="col-sm-3" role="complementary">
-			<?php print render($page['sidebar_first']); ?>
-		  </aside>  <!-- /#sidebar-first -->
-		<?php endif; ?>
-
-		<section<?php print $content_column_class; ?>>
-		  <?php if (!empty($page['highlighted'])): ?>
-			<div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-		  <?php endif; ?>
-		  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-		  <a id="main-content"></a>
-		  <?php print render($title_prefix); ?>
-		  <?php if (!empty($title)): ?>
-			<h1 class="page-header" style="display:none;"><?php print $title; ?></h1>
-		  <?php endif; ?>
-		  <?php print render($title_suffix); ?>
-		  <?php print $messages; ?>
-		  <?php if (!empty($tabs)): ?>
-			<?php print render($tabs); ?>
-		  <?php endif; ?>
-		  <?php if (!empty($page['help'])): ?>
-			<?php print render($page['help']); ?>
-		  <?php endif; ?>
-		  <?php if (!empty($action_links)): ?>
-			<ul class="action-links"><?php print render($action_links); ?></ul>
-		  <?php endif; ?>
-		  <?php print render($page['content']); ?>
-		</section>
-
-		<?php if (!empty($page['sidebar_second'])): ?>
-		  <aside class="col-sm-3" role="complementary">
-			<?php print render($page['sidebar_second']); ?>
-		  </aside>  <!-- /#sidebar-second -->
-		<?php endif; ?>
-		</div>
+				<?php if (!empty($page['sidebar_second'])): ?>
+				  <aside class="col-sm-3" role="complementary">
+					<?php print render($page['sidebar_second']); ?>
+				  </aside>  <!-- /#sidebar-second -->
+				<?php endif; ?>
+				</div>
+			</div>
 	</div>
-</div>
+	<div class ="ico-bar">
+		<div class ="ico-bar-med"><img src="sites/all/themes/ft_custom/assets/soc1.png" alt="Youtube Icon"></div>
+		<div class ="ico-bar-med"><img src="sites/all/themes/ft_custom/assets/soc2.png" alt="Twitter Icon"></div>
+		<div class ="ico-bar-med"><img src="sites/all/themes/ft_custom/assets/soc3.png" alt="Facebook Icon"></div>
+	</div>
+	<div class ="mouse-scroll-cont">
+		<div class ="mouse-ico"><h5>Scroll for More Information</h5><img src="sites/all/themes/ft_custom/assets/ico-mouse.png" alt="Scroll Icon"></div>
+	</div>
 </div>	
 <footer class="footer container">
   <?php print render($page['footer']); ?>

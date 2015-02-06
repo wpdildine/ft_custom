@@ -60,6 +60,7 @@ stylesheets[all][] = css/style.css
  scripts[] = 'bootstrap/js/ripples.min.js'
  scripts[] = 'bootstrap/js/material.min.js'
  scripts[] = 'bootstrap/js/main.js'
+ scripts[] = 'bootstrap/js/jquery-ui.min.js'
  
  
 ;
