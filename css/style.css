@@ -7,11 +7,21 @@
 
 body{
 	font-size: 1.7em;
-	font-family: 'Prata', serif;
+	font-family: 'Prata', serif !important;
+	background-color:#fff;
+	
 	
 }
-p , .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6{
-	font-family: 'Prata', serif;
+.footer {
+	height:auto;
+	padding-bottom:50px;
+	margin-top:100px;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 135px;
+}
+}
+p , .h3, .h4, .h5, .h6, h3, h4, h5, h6{
+	font-family: 'Prata', serif !important;
 	line-height:1.4
 }
 .h1, h1{
@@ -20,12 +30,18 @@ p , .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6{
 	font-size: 2.5em;
 }
 .h2, h2{
-	font-size: 1.5em;
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 1.8em;
 }
-
+.h3, h3{
+	font-family: 'Prata', serif !important;
+}
 /*Background Information*/
 #front-page-container{
 	height:1600px;
+}
+img{
+	width:100%;
 }
 #home-bg{
 	-moz-background-size: auto 100%;
@@ -38,15 +54,21 @@ p , .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6{
 #home-bg.bg-1{
 		background-image: url('../assets/bg-01.jpg'),
 		url('../assets/bg-02.jpg'),
-		url('../assets/bg-03.jpg');
-		background-position:  0 0px, 0 1600px,0 3200px;
+		url('../assets/bg-03.jpg'),
+		url('../assets/bg-04.jpg');
+		background-position:  0 0px, 0 1600px,0 3200px, 0 4800px;
 }
 
 /*Navigation UI Styling*/
 
 .main-container{
-	padding-top:100px;
+
 }
+.quote-block{
+	margin-bottom: 75px;
+	margin-top: 100px;
+}
+
 .navmenu-default {
 	background-color:#009587;	
 }
@@ -95,21 +117,23 @@ a.logo >img{
 }
 .hp-page{
 	width:auto;
+	margin-left: -15px;
 }
 .ct-pos-1{
-	margin-top:20%;
-	left:50%;
-	right:50%;
+	position:absolute;
+	top:0px;
 }
 .ct-pos-2{
-	margin-top:3%;
 	position:absolute;
-	top:200px;
-}
+	top:651px;
+	}
 .ct-pos-3{
-	margin-top:3%;
 	position:absolute;
-	top:200px;
+	top:1302px;
+}
+.ct-pos-4{
+	position:absolute;
+	top:2901px;
 }
 #hp-link-cont{
 	margin: 0px auto;
@@ -119,21 +143,28 @@ a.logo >img{
 }
 .hp-link{
 	display:inline-block;
-	width: auto;
-	margin: 0px 15%;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
 }
 .hp-link>.btn{
 	margin:12px;
 }
+
+.well>img{
+	width:100%;
+}
+.well>.btn-link	{
+	font-size: .9em;
+	width: 100%;
+
+}
 .ic-cont{
 	margin: 0px auto;
-	max-width:100%;
+	width:200px;
+	height:auto;
 	margin-top:16%;
 	text-align:center;
-	padding-top: 1%;
-	padding-bottom: 2%;
-	padding-left: 10%;
-	padding-right: 10%;
 
 }
 .ic-cont>img{
@@ -141,6 +172,8 @@ a.logo >img{
 	margin-right:auto;
 	transition: .28s cubic-bezier(.4,0,.2,1);
 	margin-bottom: 6%;
+	width:100%;
+	height:auto;
 }
 .ic-cont>h2{
 	text-align:center;
@@ -242,13 +275,30 @@ body > #front-page-container > .mouse-scroll-cont > .mouse-ico > h5{
 left: 0;
 right: auto;
 }
+
+.center-icon>.panel>.panel-body>img{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}	
+.fixed-img{
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+
+h3{
+	font-size:1em;
+}
+
+p{
+	font-size:.7em !important;
+}
+
 .ic-cont{
 	padding:0;
 }
@@ -266,26 +316,55 @@ a.logo >img{
 .hp-link{
 	margin: 0px 25%;
 }
-}
 
+.quote-block{
+	margin-bottom: 75px;
+	margin-top: 50px;
+}
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
-
-.ic-cont{
+.center-icon{
 	margin-left:auto;
 	margin-right:auto;
-	max-width: 54%;
-	margin-top: 11%;
+}
+
+.ic-cont{
+margin-left: auto;
+margin-right: auto;
+width: 150px;
+margin-top: 2%;
+margin-bottom: 30px;
 }
 
 .navbar, .navbar-header {
 	background-color: rgba(0, 149, 135, 0) !important;
 }
-}
 
+.fixed-img{
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inherit;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}	
+}	
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+.h1, h1{
+	font-family: 'Bowlby One SC', cursive;
+	line-height:1;
+	font-size: .9em;
+}
+.h3, h3{
+	font-size: .7em;
+	line-height:1.5;
+}
+p .p{
+	font-size:.6em;
+}
+
 .hp-link {
 	display: inline-block;
 	width: auto;
@@ -295,5 +374,4 @@ a.logo >img{
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-	
-}	
+}
