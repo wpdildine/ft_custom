@@ -80,8 +80,9 @@
 				<div class="navbar-header">
 				  <?php if ($logo): ?>
 				  <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-					<img src="sites/all/themes/ft_custom/assets/logo.svg" alt="<?php print t('Home'); ?>" />
+					<img src="sites/all/themes/ft_custom/assets/logo.svg" alt="<?php print t('Home'); ?>" />				
 				  </a>
+				  <div class="nav-brand">The Greenspan Floortime Approach</div>
 				  <?php endif; ?>
 
 				  <?php if (!empty($site_name)): ?>
