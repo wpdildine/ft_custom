@@ -1,0 +1,74 @@
+<div class ="row">
+	<div class ="col-xs-12">
+		<p>The late Dr. Stanley Greenspan left behind a profound legacy of knowledge in the realm of early child development. In this feature, periodically we will share audio clips of advice from Dr. Greenspan about Autism and other topics related to child development.</p>
+
+	</div>
+
+</div>
+	<hr>
+<div class="row">
+	<div class="col-xs-12 col-sm-8">
+				<p>To hear advice from Dr. Greenspan, choose from one of the topics below:</p>
+		<ul>
+			<li><a href="http://www.stanleygreenspan.com/category/advice-from-dr-greenspan/behaviors-advice-from-dr-greenspan/" title="Behaviors">Behaviors</a></li>
+			<li><a href="http://www.stanleygreenspan.com/category/advice-from-dr-greenspan/diagnosis-advice-from-dr-greenspan/" title="Diagnosis">Diagnosis</a></li>
+			<li><a href="http://www.stanleygreenspan.com/category/advice-from-dr-greenspan/interaction-advice-from-dr-greenspan/">Interaction</a></li>
+			<li><a href="http://www.stanleygreenspan.com/category/advice-from-dr-greenspan/intervention-and-treatment-strategies/">Intervention / Treatment Strategie</a></li>
+			<li><a href="http://www.stanleygreenspan.com/category/advice-from-dr-greenspan/treatment-for-older-children-7-plus/">Treatment for older children (7+)</a></li>
+		</ul>
+	</div>
+	
+	<div class="col-xs-12  col-sm-4 well">
+		<img src="http://www.stanleygreenspan.com/wp-content/uploads/StanleyGreenspan-150x1501.jpg" title="StanleyGreenspan-150x150" alt="">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">	
+		<h2>Advice from Dr. Stanley Greenspan about helping children with autism interact more</h2>
+		<p><strong>Discussion</strong>: “The key,” says Dr. Greenspan, “is to extend the circles of interaction.” Once a child is somewhat engaged, you always want to extend the circles of interaction and get more and more purposeful. Play dumb with the child so they have to extend the circles of communication. The ultimate goal is the continuous flow of back and forth communication.</p>
+		<p>“Always look for the gleam in the child's eye. Look for the affect. The biggest mistake to make is not looking for the light in the eye,” emphasizes Dr. Greenspan.</p>
+		<p>Be playful and flirtatious; don't take it too seriously. Be emotionally expressive. If you are too serious when interacting, you won';t be emotionally vibrant enough. It takes a while, but your own affect system needs to be playful, subtle and expressive.</p>
+		<p>“You should treat whatever the child is doing as intentional. Once we get the child into multiple circles, then we are trying to get the circles more complicated,” notes Dr. Greenspan.</p>
+	</div>
+</div>
+<div class = "row">
+	<div class = "col-xs-12">
+		<h3>Advice from Dr. Greenspan Topics</h3>
+		<ul>
+			<li id="menu-item-3336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3336"><a href="/category/advice-from-dr-greenspan/behaviors-advice-from-dr-greenspan/">Behaviors</a></li>
+			<li id="menu-item-3337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3337"><a href="/category/advice-from-dr-greenspan/diagnosis-advice-from-dr-greenspan/">Diagnosis</a></li>
+			<li id="menu-item-3338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3338"><a href="/category/advice-from-dr-greenspan/interaction-advice-from-dr-greenspan/">Interaction</a></li>
+			<li id="menu-item-3339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3339"><a href="/category/advice-from-dr-greenspan/intervention-and-treatment-strategies/">Intervention / treatment strategies</a></li>
+			<li id="menu-item-3340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3340"><a href="/category/advice-from-dr-greenspan/treatment-for-older-children-7-plus/">Treatment for older children (7+)</a></li>
+		</ul>
+	</div>
+</div>	
+
+<div class = "row">
+	<div class = "col-xs-12">
+		<h3>Latest Advice Clips</h3>
+		<ul>
+			<li class="cat-post-item">
+				<a class="post-title" href="/help-child-interact-audio-clip/" rel="bookmark" title="Permanent link to How do I help my child to interact more? (audio clip)">How do I help my child to interact more? (audio clip)</a>
+			</li>
+			<li class="cat-post-item">
+				<a class="post-title" href="/how-to-tell-if-floortime-is-right-for-my-child/" rel="bookmark" title="Permanent link to How can I tell if Floortime is the right intervention for my child? (audio clip)">How can I tell if Floortime is the right intervention for my child? (audio clip)</a>
+			</li>
+						
+			<li class="cat-post-item">
+				<a class="post-title" href="/tracking-short-term-goals-with-floortime/" rel="bookmark" title="Permanent link to How do I track and document a child’s short-term goals in Floortime? (audio clip)">How do I track and document a child’s short-term goals in Floortime? (audio clip)</a>
+			</li>
+						
+			<li class="cat-post-item">
+				<a class="post-title" href="/what-are-the-best-ways-to-be-creative-with-my-child-and-foster-pretend-play-audio-clip/" rel="bookmark" title="Permanent link to What are the best ways to be creative with my child and foster pretend play? (audio clip)">What are the best ways to be creative with my child and foster pretend play? (audio clip)</a>
+			</li>
+			<li class="cat-post-item">
+				<a class="post-title" href="/how-do-i-motivate-my-child/" rel="bookmark" title="Permanent link to How do I motivate my child? (audio clip)">How do I motivate my child? (audio clip)</a>
+			</li>
+			<li class="cat-post-item">
+				<a class="post-title" href="/autism-discipline-and-setting-limits/" rel="bookmark" title="Permanent link to How do I set limits or discipline my child with autism? (audio clip)">How do I set limits or discipline my child with autism? (audio clip)</a>
+			</li>
+		</ul>
+	</div>
+</div>	

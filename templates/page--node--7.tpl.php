@@ -73,16 +73,15 @@
  * @ingroup themeable
  */
 ?>
-<div id = "front-page-container">
-	<div id ="home-bg" class ="bg-1">
+<div id = "sub-page-container">
 		<header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
 			<div class="container">
 				<div class="navbar-header">
 				  <?php if ($logo): ?>
 				  <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-					<img src="../sites/all/themes/ft_custom/assets/logo.svg" alt="<?php print t('Home'); ?>" />				
+					<img src="../sites/all/themes/ft_custom/assets/logo.svg" alt="<?php print t('Home'); ?>" />
 				  </a>
-				  <div class="nav-brand">The Greenspan Floortime Approach</div>
+				   <div class="nav-brand">The Greenspan Floortime Approach</div>
 				  <?php endif; ?>
 
 				  <?php if (!empty($site_name)): ?>
@@ -100,7 +99,7 @@
 
 				<?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
 				  
-					<nav id = "leftMenu" class="navbar-offcanvas navbar-right offcanvas" role="navigation">
+					<nav id = "leftMenu" class="navbar-offcanvas offcanvas navbar-right" role="navigation">
 						<ul class="nav navbar-nav">
 						  <?php if (!empty($primary_nav)): ?>
 							<li><?php print render($primary_nav); ?></li>
@@ -117,61 +116,55 @@
 				<?php endif; ?>
 			 </div> 
 		</header>
-			<div class="main-container container">
-			  <header role="banner" id="page-header" >
+</div>
+		<div class="main-container container">
 
-				<?php print render($page['header']); ?>
-			  </header> <!-- /#page-header -->
+		  <header role="banner" id="page-header">
 
-			  <div class="row">
+			<?php print render($page['header']); ?>
+		  </header> <!-- /#page-header -->
 
-				<?php if (!empty($page['sidebar_first'])): ?>
-				  <aside class="col-sm-3" role="complementary">
-					<?php print render($page['sidebar_first']); ?>
-				  </aside>  <!-- /#sidebar-first -->
-				<?php endif; ?>
+		  <div class="row">
 
-				<section<?php print $content_column_class; ?>>
-				  <?php if (!empty($page['highlighted'])): ?>
-					<div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-				  <?php endif; ?>
-				  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-				  <a id="main-content"></a>
-				  <?php print render($title_prefix); ?>
-				  <?php if (!empty($title)): ?>
-					<h1 class="page-header" style="display:none;"><?php print $title; ?></h1>
-				  <?php endif; ?>
-				  <?php print render($title_suffix); ?>
-				  <?php print $messages; ?>
-				  <?php if (!empty($tabs)): ?>
-					<?php print render($tabs); ?>
-				  <?php endif; ?>
-				  <?php if (!empty($page['help'])): ?>
-					<?php print render($page['help']); ?>
-				  <?php endif; ?>
-				  <?php if (!empty($action_links)): ?>
-					<ul class="action-links"><?php print render($action_links); ?></ul>
-				  <?php endif; ?>
-				  <?php print render($page['content']); ?>
-				</section>
+			<?php if (!empty($page['sidebar_first'])): ?>
+			  <aside class="col-sm-3" role="complementary">
+				<?php print render($page['sidebar_first']); ?>
+			  </aside>  <!-- /#sidebar-first -->
+			<?php endif; ?>
 
-				<?php if (!empty($page['sidebar_second'])): ?>
-				  <aside class="col-sm-3" role="complementary">
-					<?php print render($page['sidebar_second']); ?>
-				  </aside>  <!-- /#sidebar-second -->
-				<?php endif; ?>
-				</div>
-			</div>
-	</div>
-	<div class ="ico-bar">
-		<div class ="ico-bar-med"><img src="../sites/all/themes/ft_custom/assets/soc1.png" alt="Youtube Icon"></div>
-		<div class ="ico-bar-med"><img src="../sites/all/themes/ft_custom/assets/soc2.png" alt="Twitter Icon"></div>
-		<div class ="ico-bar-med"><img src="../sites/all/themes/ft_custom/assets/soc3.png" alt="Facebook Icon"></div>
-	</div>
-	<div class ="mouse-scroll-cont">
-		<div class ="mouse-ico"><h5>Scroll for More Information</h5><img src="../sites/all/themes/ft_custom/assets/ico-mouse.png" alt="Scroll Icon"></div>
-	</div>
-</div>	
+			<section<?php print $content_column_class; ?>>
+			  <?php if (!empty($page['highlighted'])): ?>
+				<div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+			  <?php endif; ?>
+			  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+			  <a id="main-content"></a>
+			  <?php print render($title_prefix); ?>
+			  <?php if (!empty($title)): ?>
+				<h1 class="page-header"><?php print $title; ?></h1>
+			  <?php endif; ?>
+			  <?php print render($title_suffix); ?>
+			  <?php print $messages; ?>
+			  <?php if (!empty($tabs)): ?>
+				<?php print render($tabs); ?>
+			  <?php endif; ?>
+			  <?php if (!empty($page['help'])): ?>
+				<?php print render($page['help']); ?>
+			  <?php endif; ?>
+			  <?php if (!empty($action_links)): ?>
+				<ul class="action-links"><?php print render($action_links); ?></ul>
+			  <?php endif; ?>
+			  <?php print render($page['content']); ?>
+			</section>
+
+			<?php if (!empty($page['sidebar_second'])): ?>
+			  <aside class="col-sm-3" role="complementary">
+				<?php print render($page['sidebar_second']); ?>
+			  </aside>  <!-- /#sidebar-second -->
+			<?php endif; ?>
+
+		  </div>
+		</div>	  
+
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
