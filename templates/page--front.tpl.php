@@ -168,8 +168,9 @@
 		<div class ="ico-bar-med"><img src="../sites/all/themes/ft_custom/assets/soc2.png" alt="Twitter Icon"></div>
 		<div class ="ico-bar-med"><img src="../sites/all/themes/ft_custom/assets/soc3.png" alt="Facebook Icon"></div>
 	</div>
+    <div class="parents-link"><a class="btn btn-primary" href="#">Click to Access the Site for Parents</a></div>
 	<div class ="mouse-scroll-cont">
-		<div class ="mouse-ico"><h5>Scroll for More Information</h5><img src="../sites/all/themes/ft_custom/assets/ico-mouse.png" alt="Scroll Icon"></div>
+		<div class ="mouse-ico"><h5>Professionals Scroll<br /> for More Information</h5><img src="../sites/all/themes/ft_custom/assets/ico-mouse.png" alt="Scroll Icon"></div>
 	</div>
 </div>	
 <footer class="footer container">
